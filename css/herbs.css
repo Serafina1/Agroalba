@@ -1,0 +1,581 @@
+:root{
+    --pink:#e0447c;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+  
+    transition: .2s linear;
+
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #fff;
+    padding: 2rem 2.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background: var(--pink);
+}
+
+header{
+    position: fixed;
+    top:0 ;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0.5rem 1rem rgba(0,0,0, .1);
+
+}
+header img{
+    width: 130px;
+    height: auto;
+
+}
+
+header .navbar a{
+    font-size: 2rem;
+    padding:0 1.5rem ;
+    color: #666;
+
+}
+
+header .navbar a:hover{
+    color: var(--pink);
+}
+
+header .icons a{
+    font-size: 3rem;
+    color: #333;
+    margin-left: 1.5rem;
+
+}
+
+header .icons a:hover{
+    color: var(--pink);
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius:  .5rem;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+
+
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    background-image:url(../images/herbs/pexels-photo-616484.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+  text-align: center;
+    
+}
+
+.home .content h3{
+    font-size: 6rem;
+    color: #333;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.home .content span{
+    font-size: 3.5rem;
+    color: var(--pink);
+    padding:1rem 0;
+    line-height: 1.5;
+}
+
+.home .content p{
+    font-size:2rem;
+    justify-content: space-evenly;
+    color: #333;
+    padding: 4rem 30rem;
+    line-height: 150%;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: nowrap;
+    margin-bottom: 4rem;
+    
+}
+
+.fl .row{
+    display: block;
+    width: 35%;
+    height: 50vh;
+    margin:4rem 4rem;
+    
+    
+}
+
+.fl {
+    float:left;
+
+}
+
+
+@media only screen and (min-width: 370px) {
+    /* Mobile: */
+      .col-s-1{
+          width:8.3333%;
+      }
+      .col-s-2{
+          width:16.66%;
+      }
+      .col-s-3{
+          width:25%;
+      }
+      .col-s-4{
+          width:33.32%;
+      }
+      .col-s-5{
+          width:41.65%;
+      }
+      .col-s-6{
+          width:50%;
+      }
+      .col-s-7{
+          width:58.3333%;
+      }
+      .col-s-8{
+          width: 66.66%;
+      }
+      .col-s-9{
+          width:75%;
+      }
+      .col-s-10{
+          width:83.33%;
+      }
+      .col-s-11{
+          width:91.66%;
+      }
+      .col-s-12{
+          width:100%;
+      }
+      .hide-s{
+          display:none;
+      }
+  }
+
+@media only screen and (min-width: 768px) {
+    /* Desktop: */
+      .col-l-1{
+          width:8.3333%;
+      }
+      .col-l-2{
+          width:16.66%;
+      }
+      .col-l-3{
+          width:25%;
+      }
+      .col-l-4{
+          width:33.32%;
+      }
+      .col-l-5{
+          width:41.65%;
+      }
+      .col-l-6{
+          width:50%;
+      }
+      .col-l-7{
+          width:58.3333%;
+      }
+      .col-l-8{
+          width: 66.66%;
+      }
+      .col-l-9{
+          width:75%;
+      }
+      .col-l-10{
+          width:83.33%;
+      }
+      .col-l-11{
+          width:91.66%;
+      }
+      .col-l-12{
+          width:100%;
+      }
+      .hide-l{
+          display:none;
+      }
+  }
+
+
+
+
+
+.fl img{
+    width: 200px;
+    height: 300px;
+}
+
+
+.fl  h3{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 2rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    height: 40px;
+
+}
+
+.fl  p{
+    font-size: 1.2rem;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.6;
+    font-weight:bold;
+    padding:2rem 2rem;
+   
+
+}
+
+
+
+.foto{
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+    margin-top: 60rem;
+    background-image:url(../images/foto/viber_image_2021-12-14_14-17-54-177.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    object-fit: cover;
+
+}
+.foto2{
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+    margin-top: 60rem;
+    background-image:url(../images/foto/viber_image_2021-12-14_14-17-54-177.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    object-fit: cover;
+
+}
+
+.foto h1{
+    padding-left: 10rem;
+    padding-right: 10rem;
+    font-family: 'Times New Roman', Times, serif;    
+    color: #fff;
+    font-size: 2.3rem;
+}
+
+.foto1{
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+    margin-top: 10rem;
+
+    background-image:url(../images/foto/863A7265.JPG);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    object-fit: cover;
+
+}
+
+.foto1 h1{
+    padding-left: 10rem;
+    padding-right: 10rem;
+    font-family: 'Times New Roman', Times, serif;    
+    color: #fff;
+    font-size: 2.3rem;
+}
+
+.fl  i{
+
+    font-size: 20px;
+    padding-bottom: 1rem;
+    margin: 5px;
+    padding-left: 2rem;
+    
+}
+
+.fl i:hover{
+    color:var(--pink);
+    cursor: pointer;
+}
+
+
+
+.foto blockquote {
+    margin: 0 0px 30px 0px;
+    padding-left: 0;
+    position: relative;
+    text-shadow: 0px 1px 3px rgb(6, 39, 9);
+ }
+ 
+ .foto blockquote p {
+    font-family: 'Quicksand', sans-serif;
+    padding: 20px;
+    font-size: 29px;
+    line-height: 48px;
+    color: #fff;
+    text-align: center;
+ }
+ .foto blockquote cite {
+    display: block;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 18px;
+    color: #fff;
+    text-align: center;
+ }
+
+
+ .foto1 h1{
+    font-family: 'Quicksand', sans-serif;
+
+    padding: 0;
+    font-size: 29px;
+    line-height: 48px;
+    color:#333;
+    text-align: center;
+ 
+ }
+
+
+
+ .footer{
+    background-color: var(--pink);
+ 
+
+}
+i {
+
+    font-size: 20px;
+    padding-bottom: 1rem;
+    margin: 5px;
+    
+    
+}
+
+.fl i:hover{
+    color:var(--pink);
+    cursor: pointer;
+}
+
+
+.footer .div{
+    text-align: center;
+    padding-top: 5rem;
+    font-size: 1.5rem;
+}
+.footer .div h2{
+    padding-top: 5rem;
+    line-height: 2.9;
+    font-family: 'Quicksand', sans-serif;
+}
+.footer .div ul{
+    text-decoration: none;
+}
+.footer .div li{
+    text-decoration: none;
+    list-style: none;
+    line-height: 1.6;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.footer .social{
+    text-align: center;
+    font-size: 3rem;
+    line-height: 2;
+    font-family: 'Quicksand', sans-serif;
+}
+.footer .social i:hover{
+    color: #fff;
+    cursor: pointer;
+}
+.footer .credit{
+    text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Quicksand', sans-serif;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991){
+
+    html{
+        font-size: 55%;
+    
+    }
+
+    header{
+        padding: 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+
+    .home{
+        background-position:left;
+    }
+}
+
+
+
+
+@media (max-width: 768px){
+
+    header .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #eee;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0,100% 0,100% 0,0 0);
+
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0,100% 0,100% 100%,0% 100%);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background-color: #fff;
+        border: .1rem solid rgba(0,0,0,.1);
+        display: block;
+    } 
+
+    .home .content h3{
+        font-size: 5rem;
+    }
+
+    .home .content span{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 30%;
+    
+    }
+
+    header{
+        padding: 1rem;
+    }
+
+    .heading{
+        font-size: 2rem;
+    }
+
+    .container {
+        background-position: right;
+    }
+}
